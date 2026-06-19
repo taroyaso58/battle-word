@@ -126,7 +126,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 64)
 text = "🏆  Puan Modu  (8 soru — en yüksek puan kazanır)"
 theme_override_font_sizes/font_size = 18
-theme_override_colors/font_color = Color(0.284, 0.584, 0.937, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 
 [node name="ZayifAyrac" type="Label" parent="MarginContainer/VBox"]
 layout_mode = 2

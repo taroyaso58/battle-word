@@ -3,3 +3,6 @@
 /android/
 export_presets.cfg
 /builds/
+*.apk
+*.aab
+*.idsig

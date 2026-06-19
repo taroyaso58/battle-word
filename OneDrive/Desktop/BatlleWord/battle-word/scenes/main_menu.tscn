@@ -46,7 +46,9 @@ size_flags_horizontal = 3
 
 [node name="ProfilButon" type="Button" parent="MarginContainer/VBox/UstSatir" unique_id=79245107]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.284, 0.584, 0.937, 1)
+custom_minimum_size = Vector2(0, 48)
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "👤  Giriş Yap"
 
 [node name="Dolgu1" type="Control" parent="MarginContainer/VBox" unique_id=723898334]

@@ -56,5 +56,6 @@ size_flags_vertical = 3
 
 [node name="IptalButon" type="Button" parent="MarginContainer/VBox"]
 layout_mode = 2
+custom_minimum_size = Vector2(0, 64)
 text = "İptal"
 theme_override_font_sizes/font_size = 20

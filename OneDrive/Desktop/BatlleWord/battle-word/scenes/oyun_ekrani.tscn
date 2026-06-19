@@ -101,15 +101,12 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 
 [node name="FeedbackPanel" type="Panel" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchor_left = 0.05
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 0.95
 anchor_bottom = 0.5
-offset_left = -220.0
-offset_top = -48.0
-offset_right = 220.0
-offset_bottom = 48.0
+offset_top = -56.0
+offset_bottom = 56.0
 visible = false
 
 [node name="FeedbackEtiket" type="Label" parent="FeedbackPanel"]
