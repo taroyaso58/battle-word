@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://b3ijhwtfvf2uh"]
+
+[ext_resource type="Script" uid="uid://dwydkvh8ib6ri" path="res://scripts/main_menu.gd" id="1"]
+
+[node name="MainMenu" type="Control" unique_id=87250243]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Fon" type="ColorRect" parent="." unique_id=1793749735]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.051, 0.1059, 0.1647, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=141918660]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer" unique_id=1900618762]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UstSatir" type="HBoxContainer" parent="MarginContainer/VBox" unique_id=1110850883]
+layout_mode = 2
+
+[node name="Dolgu" type="Control" parent="MarginContainer/VBox/UstSatir" unique_id=2128904167]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ProfilButon" type="Button" parent="MarginContainer/VBox/UstSatir" unique_id=79245107]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.284, 0.584, 0.937, 1)
+text = "👤  Giriş Yap"
+
+[node name="Dolgu1" type="Control" parent="MarginContainer/VBox" unique_id=723898334]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OyunBasligi" type="Label" parent="MarginContainer/VBox" unique_id=1936731871]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 52
+text = "KELİME SAVAŞI"
+horizontal_alignment = 1
+
+[node name="AltBaslik" type="Label" parent="MarginContainer/VBox" unique_id=943404187]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 18
+text = "Türkce Kelime Yarışması"
+horizontal_alignment = 1
+
+[node name="Dolgu2" type="Control" parent="MarginContainer/VBox" unique_id=1857762471]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OynaButon" type="Button" parent="MarginContainer/VBox" unique_id=1630587792]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "OYNA"
+
+[node name="NasilOynanilirButon" type="Button" parent="MarginContainer/VBox" unique_id=520969245]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "NASIL OYNANILIR"
+
+[node name="AyarlarButon" type="Button" parent="MarginContainer/VBox" unique_id=329758539]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "AYARLAR"
+
+[node name="Dolgu3" type="Control" parent="MarginContainer/VBox" unique_id=859694199]
+layout_mode = 2
+size_flags_vertical = 3

@@ -1,0 +1,147 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/mod_secimi.gd" id="1"]
+
+[node name="ModSecimi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Fon" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.0510, 0.1059, 0.1647, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UstSatir" type="HBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="GeriButon" type="Button" parent="MarginContainer/VBox/UstSatir"]
+layout_mode = 2
+text = "←"
+theme_override_font_sizes/font_size = 28
+
+[node name="Baslik" type="Label" parent="MarginContainer/VBox/UstSatir"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MOD SEÇ"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="Dolgu" type="Control" parent="MarginContainer/VBox/UstSatir"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 0)
+
+[node name="KilitlemeMetni" type="Label" parent="MarginContainer/VBox"]
+layout_mode = 2
+text = "🔒  Giriş yap"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+visible = false
+
+[node name="Dolgu1" type="Control" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="KartSatiri" type="HBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="OnlineKart" type="PanelContainer" parent="MarginContainer/VBox/KartSatiri"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OnlineVBox" type="VBoxContainer" parent="MarginContainer/VBox/KartSatiri/OnlineKart"]
+layout_mode = 2
+
+[node name="OnlineIkon" type="Label" parent="MarginContainer/VBox/KartSatiri/OnlineKart/OnlineVBox"]
+layout_mode = 2
+text = "⚔"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 64
+theme_override_colors/font_color = Color(0.284, 0.584, 0.937, 1)
+
+[node name="OnlineButon" type="Button" parent="MarginContainer/VBox/KartSatiri/OnlineKart/OnlineVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+text = "ONLINE 1v1"
+theme_override_font_sizes/font_size = 20
+
+[node name="OnlineAciklama" type="Label" parent="MarginContainer/VBox/KartSatiri/OnlineKart/OnlineVBox"]
+layout_mode = 2
+text = "Gercek rakiple yarış"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+
+[node name="SoloKart" type="PanelContainer" parent="MarginContainer/VBox/KartSatiri"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SoloVBox" type="VBoxContainer" parent="MarginContainer/VBox/KartSatiri/SoloKart"]
+layout_mode = 2
+
+[node name="SoloIkon" type="Label" parent="MarginContainer/VBox/KartSatiri/SoloKart/SoloVBox"]
+layout_mode = 2
+text = "⏱"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 64
+theme_override_colors/font_color = Color(0.957, 0.635, 0.384, 1)
+
+[node name="SoloButon" type="Button" parent="MarginContainer/VBox/KartSatiri/SoloKart/SoloVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 56)
+text = "SOLO"
+theme_override_font_sizes/font_size = 20
+
+[node name="SoloAciklama" type="Label" parent="MarginContainer/VBox/KartSatiri/SoloKart/SoloVBox"]
+layout_mode = 2
+text = "Zamana karşı oyna"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+
+[node name="PuanModuButon" type="Button" parent="MarginContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 64)
+text = "🏆  Puan Modu  (8 soru — en yüksek puan kazanır)"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.284, 0.584, 0.937, 1)
+
+[node name="ZayifAyrac" type="Label" parent="MarginContainer/VBox"]
+layout_mode = 2
+text = "── VEYA ──"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.4, 0.4, 0.4, 1)
+
+[node name="ZayifButon" type="Button" parent="MarginContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 64)
+text = "📚  Zayıf Noktalarını Çalış  (0 kelime)"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.957, 0.635, 0.384, 1)
+disabled = true
+
+[node name="Dolgu2" type="Control" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
