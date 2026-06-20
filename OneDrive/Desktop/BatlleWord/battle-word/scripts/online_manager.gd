@@ -2,7 +2,7 @@ extends Node
 
 # == Firebase Yapılandırması ==
 const FIREBASE_API_KEY    := "YOUR APIKEY"
-const FIREBASE_PROJECT_ID := "battleword-95941"
+const FIREBASE_PROJECT_ID := "YOUR ID"
 
 const DB_URL   := "https://" + FIREBASE_PROJECT_ID + "-default-rtdb.firebaseio.com"
 const AUTH_URL := "YOUR KEY" + FIREBASE_API_KEY
