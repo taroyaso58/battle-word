@@ -1,11 +1,11 @@
 extends Node
 
 # == Firebase Yapılandırması ==
-const FIREBASE_API_KEY    := "AIzaSyAmMV57dM99LHBTxA7EtQ1-k-EH5pnufOg"
+const FIREBASE_API_KEY    := "YOUR APIKEY"
 const FIREBASE_PROJECT_ID := "battleword-95941"
 
 const DB_URL   := "https://" + FIREBASE_PROJECT_ID + "-default-rtdb.firebaseio.com"
-const AUTH_URL := "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + FIREBASE_API_KEY
+const AUTH_URL := "YOUR KEY" + FIREBASE_API_KEY
 
 signal giris_tamamlandi(uid: String)
 signal giris_hatasi(mesaj: String)
